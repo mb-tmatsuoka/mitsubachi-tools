@@ -38,3 +38,30 @@ mushikago-sdkは以下のコマンドでインストールすることができ�
 実行には以下の環境が必要です
 
     ruby 1.8.7か1.9.2以上
+
+使い方
+------
+
+### pull\_resources
+
+    $ mitsubachi-pull-resources.rb プロジェクト名 [prefix]
+
+実行すると、指定したプロジェクトのリソースをすべてローカルにダウンロードします。
+ファイルサイズが0のファイル、すでにローカルにあるファイルはダウンロードしません。
+
+prefixを指定することで、prefix以下のリソースのみをダウンロードします。
+例えば以下のコマンドでstdoutをすべて取得することができます。
+
+    $ mitsubachi-pull-resources.rb sample_project log/stdout/
+
+### clear\_resources
+
+    $ mitsubachi-clear-resources.rb プロジェクト名 [prefix]
+
+実行すると、指定したプロジェクトのリソースをすべて削除します。
+ローカルにダウンロードしたファイルは削除しません。
+
+prefixを指定することで、prefix以下のリソースのみを削除します。
+例えば以下のコマンドでstdoutをすべて削除することができます。
+
+    $ mitsubachi-clear-resources.rb sample_project log/stdout/

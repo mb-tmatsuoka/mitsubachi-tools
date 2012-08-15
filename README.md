@@ -32,6 +32,11 @@ mushikago-sdkは以下のコマンドでインストールすることができ�
     export MITSUBACHI_TOOLS_HOME=path/to/mitsubachi-tools
     export PATH=$PATH:$MITSUBACHI_TOOLS_HOME
 
+プログラムを最新にアップデートしたい場合は以下のコマンドで更新することができます。
+
+    $ cd $MITSUBACHI_TOOLS_HOME
+    $ git pull
+
 環境
 ----
 

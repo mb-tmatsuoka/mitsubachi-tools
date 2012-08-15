@@ -15,6 +15,11 @@ mitsubachi Tools
 インストール方法
 ----------------
 
+事前にrubyとmushikago-sdkがインストールされていることを確認して下さい。
+mushikago-sdkは以下のコマンドでインストールすることができます。
+
+    $ gem install mushikago-sdk
+
 下記コマンドを実行後mushikago-credentials.rbを編集してAPIキーとSECRETキーを設定して下さい。
 
     $ git clone git@github.com:mb-tmatsuoka/mitsubachi-tools.git
@@ -27,4 +32,9 @@ mitsubachi Tools
     export MITSUBACHI_TOOLS_HOME=path/to/mitsubachi-tools
     export PATH=$PATH:$MITSUBACHI_TOOLS_HOME
 
+環境
+----
 
+実行には以下の環境が必要です
+
+    ruby 1.8.7か1.9.2以上
